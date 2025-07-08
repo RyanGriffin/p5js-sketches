@@ -10,6 +10,7 @@ just messin' around &amp; trying new things...
 * [Sketches](#sketches)
 * [How to Run](#how-to-run)
 * [Technologies Used](#technologies-used)
+* [License](#License)
 * [Contact](#contact)
 
 ---
@@ -90,6 +91,12 @@ You can open the `index.html` file of each sketch directly in your web browser. 
 * **p5.js** - A JavaScript library for creative coding.
 * **HTML5**
 * **CSS3**
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
