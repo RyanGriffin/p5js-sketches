@@ -58,11 +58,19 @@ Here's a list of some the sketches included in this collection:
 
 There are a few ways to view these p5.js sketches:
 
-### Option 1: View Online (Work In Progress)
+### Option 1: View Online (Recommended)
+While these sketches are maintained here on GitHub for version control and visibility, the **simplest way to experience them is directly through the p5.js Web Editor.**
+
+You can access the full collection by visiting this link in your web browser:
+
+[editor.p5js.org/RyJoGri/collections/d7MfvdxL8](https://editor.p5js.org/RyJoGri/collections/d7MfvdxL8)
+
+
+### Option 2: View Through GitHub Pages (Work In Progress)
 I still need to set up **GitHub Pages** for this repository... But once I do, you can view the live sketches directly in your browser!
 
 
-### Option 2: Run Locally using a Local Server
+### Option 3: Run Locally using a Local Server
 This is the recommended way to run p5.js sketches locally to avoid common cross-origin issues.
 
 #### Prerequisites:
@@ -88,15 +96,6 @@ This is the recommended way to run p5.js sketches locally to avoid common cross-
     http-server
     ```
 4.  Open your web browser and navigate to the address provided by `http-server` (usually `http://localhost:8080` or similar). You can then click on the folder for the sketch you wish to view.
-
-
-### Option 3: Open Directly in a Browser (May have Limitations)
-
-You can open the `index.html` file of each sketch directly in your web browser. However, be aware that some p5.js features (like loading local files, images, or sounds) might be restricted by your browser's security policies when run this way.
-
-1.  Download or clone the repository to your computer.
-2.  Navigate to the specific sketch's folder (e.g., `p5js-sketches/wavePattern/`).
-3.  Double-click the `index.html` file to open it in your default web browser.
 
 ---
 
