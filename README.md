@@ -10,7 +10,7 @@ just messin' around &amp; trying new things...
 * [Sketches](#sketches)
 * [How to Run](#how-to-run)
 * [Technologies Used](#technologies-used)
-* [License](#License)
+* [License](#license)
 * [Contact](#contact)
 
 ---
@@ -25,19 +25,33 @@ This repository showcases various interactive and generative art pieces created 
 
 Here's a list of some the sketches included in this collection:
 
-* **wavePattern**
+* **[wavePattern](wavePattern/)**
     * My first p5.js sketch!
     * This sketch mimics a wave pattern using particles rotating in a circle with an offset starting point.
 
-* **slimeMold**
+* **[slimeMold](slimeMold/)**
     * This sketch simulates slime mold (Physarum polycephalum).
     * It's based on [this paper by Jeff Jones](https://uwe-repository.worktribe.com/output/980579/characteristics-of-pattern-formation-and-evolution-in-approximations-of-physarum-transport-networks) and [this blog post by Sage Jenson](https://cargocollective.com/sagejenson/physarum)
 
-* **quadTreeExercise**
-    * This sketch implements a Quadtree data structure.
-    * It's meant to demonstrate how quadtrees efficiently organize points in a 2D space, significantly improving performance for tasks, such as particle collisions, by subdividing the area and only checking relevant regions.
-
-
+* **[quadTreeExercise](quadTreeExercise/)**
+    * This sketch implements a Quadtree data structure approach to simulate particles and their collisions.
+    * It's meant to demonstrate how quadtrees efficiently organize points in a 2D space, significantly improving performance, particularly for particle collisions, by subdividing the area and only checking relevant regions.
+ 
+* **[kineticTypography](kineticTypography/)**
+   * Built directly after [wavePattern](wavePattern/), This sketch uses particle rotations similar to wavePattern, but applies this concept to text
+   * This sketch served as an exercise for typography (loadFont() and textToPoints())
+ 
+* **[interactiveRotatingBlocks](interactiveRotatingBlocks/)**
+   * This sketch uses mouse location to create a trail of glowing, rotating blocks in a dark and static grid
+   * This sketch is the result of my first experimentations with user interaction
+ 
+* **[interactiveGridMouseLocation](interactiveGridMouseLocation/)**
+   * This sketch uses mouse location to draw a pattern of rectangles
+   * Made directly after [interactiveRotatingBlocks](interactiveRotatingBlocks/), it uses similar concepts, but with a different approach aimed to create a smoother experience with fast mouse movements
+ 
+* **[particleSystemExercise](particleSystemExercise/)**
+   * This sketch uses mouse location to create rings of persisting particles
+   * Again, it use similar concepts to [interactiveRotatingBlocks](interactiveRotatingBlocks/) + [interactiveGridMouseLocation](interactiveGridMouseLocation/). Building upon those concepts, this sketch introduces my first experiment with particles that maintain state, each with persistent speed, direction, and evolving color, automatically decaying when off-screen. This would serve as the basis for [quadTreeExercise](quadTreeExercise/)
 ---
 
 ## How to Run
