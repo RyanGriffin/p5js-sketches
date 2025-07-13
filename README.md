@@ -34,24 +34,24 @@ Here's a list of some the sketches included in this collection:
     * It's based on [this paper by Jeff Jones](https://uwe-repository.worktribe.com/output/980579/characteristics-of-pattern-formation-and-evolution-in-approximations-of-physarum-transport-networks) and [this blog post by Sage Jenson](https://cargocollective.com/sagejenson/physarum)
 
 * **[quadTreeExercise](quadTreeExercise/)**
-    * This sketch implements a Quadtree data structure approach to simulate particles and their collisions.
-    * It's meant to demonstrate how quadtrees efficiently organize points in a 2D space, significantly improving performance, particularly for particle collisions, by subdividing the area and only checking relevant regions.
+    - This sketch implements a Quadtree data structure approach to simulate particles and their collisions.
+    - It's meant to demonstrate how quadtrees efficiently organize points in a 2D space, significantly improving performance, particularly for particle collisions, by subdividing the area and only checking relevant regions.
  
 * **[kineticTypography](kineticTypography/)**
-   * Built directly after [wavePattern](wavePattern/), This sketch uses particle rotations similar to wavePattern, but applies this concept to text
-   * This sketch served as an exercise for typography (loadFont() and textToPoints())
+   - Built directly after [wavePattern](wavePattern/), This sketch uses particle rotations similar to wavePattern, but applies this concept to text
+   - This sketch served as an exercise for typography (loadFont() and textToPoints())
  
 * **[interactiveRotatingBlocks](interactiveRotatingBlocks/)**
-   * This sketch uses mouse location to create a trail of glowing, rotating blocks in a dark and static grid
-   * This sketch is the result of my first experimentations with user interaction
+   - This sketch uses mouse location to create a trail of glowing, rotating blocks in a dark and static grid
+   - This sketch is the result of my first experimentations with user interaction
  
 * **[interactiveGridMouseLocation](interactiveGridMouseLocation/)**
-   * This sketch uses mouse location to draw a pattern of rectangles
-   * Made directly after [interactiveRotatingBlocks](interactiveRotatingBlocks/), it uses similar concepts, but with a different approach aimed to create a smoother experience with fast mouse movements
+   - This sketch uses mouse location to draw a pattern of rectangles
+   - Made directly after [interactiveRotatingBlocks](interactiveRotatingBlocks/), it uses similar concepts, but with a different approach aimed to create a smoother experience with fast mouse movements
  
 * **[particleSystemExercise](particleSystemExercise/)**
-   * This sketch uses mouse location to create rings of persisting particles
-   * Again, it use similar concepts to [interactiveRotatingBlocks](interactiveRotatingBlocks/) + [interactiveGridMouseLocation](interactiveGridMouseLocation/). Building upon those concepts, this sketch introduces my first experiment with particles that maintain state, each with persistent speed, direction, and evolving color, automatically decaying when off-screen. This would serve as the basis for [quadTreeExercise](quadTreeExercise/)
+   - This sketch uses mouse location to create rings of persisting particles
+   - Again, it use similar concepts to [interactiveRotatingBlocks](interactiveRotatingBlocks/) + [interactiveGridMouseLocation](interactiveGridMouseLocation/). Building upon those concepts, this sketch introduces my first experiment with particles that maintain state, each with persistent speed, direction, and evolving color, automatically decaying when off-screen. This would serve as the basis for [quadTreeExercise](quadTreeExercise/)
 ---
 
 ## How to Run
@@ -66,12 +66,16 @@ You can access the full collection by visiting this link in your web browser:
 [editor.p5js.org/RyJoGri/collections/d7MfvdxL8](https://editor.p5js.org/RyJoGri/collections/d7MfvdxL8)
 
 
-### Option 2: View Through GitHub Pages (Work In Progress)
-I still need to set up **GitHub Pages** for this repository... But once I do, you can view the live sketches directly in your browser!
+### Option 2: View Through GitHub Pages (Recommended)
+Another great option to view these sketches is through **GitHub Pages**. I've set up GitHub pages for this repository, which can be found by visiting this link in your web browser:
+
+[ryangriffin.github.io/p5js-sketches/](https://ryangriffin.github.io/p5js-sketches/)
+
+Once you're there, simply click on the name in the [Sketches](#sketches) section of this readme to view the sketch.
 
 
 ### Option 3: Run Locally using a Local Server
-This is the recommended way to run p5.js sketches locally to avoid common cross-origin issues.
+This is not the recommended way to run p5.js sketches, but can be useful to avoid common cross-origin issues.
 
 #### Prerequisites:
 
