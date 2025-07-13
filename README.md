@@ -22,8 +22,6 @@ This repository showcases various interactive and generative art pieces created 
 
 ## Sketches
 
-Here's a list of some the sketches included in this collection:
-
 * **[wavePattern](wavePattern/)**
     * My first p5.js sketch!
     * This sketch mimics a wave pattern using particles rotating in a circle with an offset starting point
