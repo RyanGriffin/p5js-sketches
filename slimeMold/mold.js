@@ -1,35 +1,25 @@
 class Mold {
-  constructor() {
-    // starting location(s)
-    // this.x = random(width)
-    // this.y = random(height);
-    this.x = width/2;
-    this.y = height/2;
+  constructor(x, y) {
+    // starting location
+    this.x = x;
+    this.y = y;
     
-    // radius of particle
-    this.r = 1;
+    // particle radius
+    this.r = 1.5;
     
     // sensor distance
     this.sensorDist = 15;
     
     // rotation and sensor angles
-    this.rotAngle = 25;
-    this.sensorAngle = 25;
+    this.rotAngle = 22 + random(3);
+    this.sensorAngle = 22 + random(3);
     
     // heading direction
     this.heading = random(360);
-    // if(random(1) < 0.1666666666666667)
-    //   this.heading += 0;
-    // else if(random(1) < 0.2)
-    //   this.heading += 60;
-    // else if(random(1) < 0.25)
-    //   this.heading += 120;
-    // else if(random(1) < 0.3333333333333333333333333333)
-    //    this.heading += 180;
-    // else if(random(1) < 0.5)
-    //   this.heading += 240;
-    // else
-    //   this.heading += 300;
+    // this.heading = random([36, 108, 180, 252, 324]) + random(35);
+    
+    // movement factor
+    this.speed = 1.5;
     
     // constants
     this.vx = cos(this.heading);
@@ -40,8 +30,8 @@ class Mold {
   }
   
   update() {
-    this.vx = 3*cos(this.heading);
-    this.vy = 2*sin(this.heading);
+    this.vx = this.speed*cos(this.heading);
+    this.vy = this.speed*sin(this.heading);
     
     this.x = (this.x + this.vx + width) % width;
     this.y = (this.y + this.vy + height) % height;
@@ -63,22 +53,20 @@ class Mold {
     // calculate pixel index for front sensor
     index = 4*(d*floor(this.fSensorPos.y)) * (d*width) + 4*(d*floor(this.fSensorPos.x)); 
     f = pixels[index];
-
-    // print(f,l,r);
     
     // compare values to decide which direction to *GROW*
-    if(f > l && f > r)
-      this.heading += 0; // front is best, don't adjust heading...
-    else if(f < l && f < r) {
+    if(f > l && f > r)  // front is best, no change...
+      this.heading += 0;
+    else if(f < l && f < r) { // front is worst, turn randomly
       if(random(1) < 0.5)
         this.heading -= this.rotAngle;
       else
         this.heading += this.rotAngle;
     }
-    else if (l > r)
-      this.heading -= this.rotAngle;
-    else if (r > l)
+    else if (r > l) // turn right
       this.heading += this.rotAngle;
+    else if (l > r) // turn left
+      this.heading -= this.rotAngle;
   }
   
   getSensorPos(sensor, angle) {
