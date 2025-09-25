@@ -8,12 +8,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 350);
   points = font.textToPoints("R Y A N !", 20, 220, 135, {
-    sampleFactor:1//,
-    //simplifyThreshold:1
+    sampleFactor:1
     });
-  //print(points);
 }
 
 function draw() {
