@@ -2,7 +2,7 @@ let cols, rows, spacing = 20, scl = 0.1;
 let size = [];
 
 function setup() {
-  createCanvas(750, 750);
+  createCanvas(windowWidth, windowHeight);
   rectMode(CENTER);
   cols = width/spacing;
   rows = height/spacing;

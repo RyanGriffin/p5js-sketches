@@ -5,7 +5,7 @@ let num = 50;
 let particles = [];
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   for(let i = 0; i < num; i++)
     particles[i] = new Particle(random(width), random(height));
   

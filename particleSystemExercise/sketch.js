@@ -1,9 +1,8 @@
 let ps = [];
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 255);
-  //ps = new System(width/2, height/2);
 }
 
 function draw() {

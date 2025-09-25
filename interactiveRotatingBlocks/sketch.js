@@ -2,7 +2,7 @@ let bricks = [];
 let cols, rows, size = 15, offset = 2;
 
 function setup() {
-  createCanvas(750, 750);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   cols = width/size;
   rows = height/size;
